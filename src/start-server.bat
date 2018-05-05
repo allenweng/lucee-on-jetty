@@ -9,7 +9,7 @@ PUSHD "%~dp0%lucee-base"
 
 @ECHO "Starting Jetty... (Use Ctrl-C to shutdown server.)"
 @ECHO.
-java -jar ../jetty-home/start.jar
+..\jdk\bin\java -jar ../jetty9/start.jar
 
 POPD
 
