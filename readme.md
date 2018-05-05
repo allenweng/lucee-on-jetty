@@ -4,8 +4,8 @@ Lucee 5 on Jetty 9
 Description
 -----------
 
-Lucee 5 on Jetty 9 is a project based on Peter Boughton's "Lucee on Jetty" project.
-Peter's project used Lucee 4.5 and I think it is time using the latest Lucee.
+"Lucee 5 on Jetty 9" is a project based on Peter Boughton's "Lucee on Jetty" project.
+Peter's project used Lucee 4.5 and I think it is time using the latest [Lucee](www.lucee.org).
 I need a quick and clean setup for my own personal CF projects.
 
 You can still view Peter's awesome project @
@@ -15,7 +15,7 @@ You can still view Peter's awesome project @
 How to Use it
 -------------
 
-The basic process to use the latest Java 8, Jetty 9 and Lucee 5:
+The basic process to use the latest Java 8, Jetty 9 and Lucee 5 is:
 
 1. copy **src** folder to be {target} folder (for example, 'lucee5onjetty9')
 
