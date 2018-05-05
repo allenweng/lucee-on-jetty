@@ -1,8 +1,8 @@
 <cfoutput><!doctype html>
 
-	<title>Lucee on Jetty</title>
+	<title>Lucee 5 on Jetty 9</title>
 
-	<h1>Congratulations, you are running Lucee on Jetty.</h1>
+	<h1>Congratulations, you are running Lucee 5 on Jetty 9.</h1>
 
 	<p>Lucee Version: <var>#Server.Lucee.Version#</var>
 	<p>Jetty Version: <var>#ListRest(Server.Servlet.Name,'/')#</var>
