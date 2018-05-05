@@ -1,43 +1,50 @@
-Lucee on Jetty
+Lucee 5 on Jetty 9
 
 
 Description
 -----------
 
-Lucee on Jetty is a project to provide a Lucee package that is easy to use and
-provides a fully functional & capable web server, with extensive documentation
-on how everything has been done, so it can be understood and adapted as needed.
+Lucee 5 on Jetty 9 is a project based on Peter Boughton's "Lucee on Jetty" project.
+Peter's project used Lucee 4.5 and I think it is time using the latest Lucee.
+I need a quick and clean setup for my own personal CF projects.
 
-This repository contains the template for bundling Lucee with Jetty. It uses
-Jetty's home/base functionality to simplify the process and avoid the need to
-modify the Jetty files.
-
-The project's homepage, including links to download the bundles, is at:
-
+You can still view Peter's awesome project's @
 > http://sorcerersisle.com/projects:lucee-on-jetty
 
 
-How to build
-------------
+How to Use it
+-------------
 
-The build directory contains a bash build script, but the basic process is:
+The basic process to use the latest Java 8, Jetty 9 and Lucee 5:
 
-  1. cp src -> {target}
-  2. unzip jetty-X.zip -> {target}/jetty-home
-  3. unzip lucee-jars.zip -> {target}/lucee-base/lib/ext/
-  4. update versions in {target}/README.TXT
-  5. zip {target} lucee-on-jetty.zip
+  1. copy src folder to b e {target} folder (for example, 'lucee5onjetty9')
 
-That's all there is to it.
+  2. get Jetty (on 5/4/2018, the version is 9.4.9.v20180320)
+  2.1 download the latest Jetty 9 from https://www.eclipse.org/jetty/download.html
+  2.2 extract jetty-distribution-9.4.9.v20180320.zip, move the folder "jetty-distribution-9.4.9.v20180320" to be {target}/jetty9
+  2.3 you can remove the "demo-base" folder in {target}/jetty9
 
+  3. get Lucee 5 (on 5/4/2018, the version is 5.2.7.62)
+  3.1 download the latest Lucee 5 from http://download.lucee.org/
+  3.2 put the "Jar file (with extension)" lucee-5.2.7.62.jar in {target}/lucee5/lib/ext/ folder
+
+  4. get Java 8 (on 5/4/2018, the version is 8u171/8u172)
+  4.1 download the latest Java 8 (Server JRE) from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+  4.2 extract server-jre-8u172-windows-x64.tar.gz and move the folder "jdk1.8.0_172" to be {target}/jdk
+
+  5. Start Lucee
+  5.1 run start-server.bat, the lucee server will be deployed
+  5.2 browse to http://localhost:8080/lucee/admin/server.cfm
+
+The build directory still contains Peter's bash build script, I didn't touch it.
 
 Licensing
 ---------
 
-Lucee on Jetty is a project created and maintained by Peter Boughton, licensed
+Lucee 5 on Jetty 9 is a project created and maintained by Chenjiou Weng, licensed
 under the LGPLv3, aside from the documentation and wiki which is CC BY-SA v4.0.
 
-This repository does not contain Lucee or Jetty themselves; these have their 
+This repository does not contain Lucee or Jetty themselves; these have their
 own licenses (Lucee: LGPLv2; Jetty: Apache License 2.0 or EPLv2).
 
 
